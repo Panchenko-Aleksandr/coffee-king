@@ -1,0 +1,148 @@
+.editor-user-container {
+  margin: 2rem 2rem;
+
+  & table {
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+
+    & > tr:nth-child(2n) {
+      background-color: #fff;
+    }
+
+    & > tr.th-table {
+      background-color: #c0aa83;
+      text-align: center;
+
+      & td {
+        padding: 1rem .5rem;
+        font-weight: 700;
+      }
+    }
+
+    & > tr.th-search-field {
+      border: 1px solid #ccc;
+
+      & td {
+        padding: 1rem;
+        text-align: center;
+      }
+    }
+
+    & > tr.tr-user-line {
+      & td {
+
+        padding: .5rem 1rem;
+        text-align: center;
+
+        & .show-wait-orders {
+          font-weight: 700;
+          cursor: pointer;
+
+          &:hover {
+            color: #bb6a96;
+          }
+
+        }
+
+        & .login-change-pass {
+          font-weight: 700;
+          cursor: pointer;
+          position: relative;
+          transition: all .5s ease-in-out;
+
+          &:hover {
+            transition: all .5s ease-in-out;
+            color: #6a89c0;
+          }
+
+
+          & .change-pass {
+            &.hide {
+              display: none;
+            }
+
+            & label {
+              position: absolute;
+              font-size: .9rem;
+              border-radius: 5px;
+              top: -5.5rem;
+              left: 8rem;
+              background-color: rgba(136, 114, 87, 0.82);
+              color: #fff;
+              padding: .4rem 1rem .5rem 1rem;
+
+              & input {
+                margin-top: .5rem;
+                margin-bottom: .7rem;
+              }
+
+              & span {
+                margin-left: 3px;
+                padding: .2rem .5rem;
+                border-radius: 3px;
+                border: 1px solid #000;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+
+                &:hover {
+                  background-color: rgba(103, 136, 68, 0.74);
+                  border-color: #fff;
+                  transition: all .5s ease-in-out;
+                }
+
+              }
+            }
+          }
+
+        }
+
+        & .cart-list-wrapper {
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background-color: rgba(3, 3, 3, 0.69);
+          z-index: 1000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &.hide {
+            display: none;
+          }
+        }
+
+      }
+    }
+
+
+  }
+}
+
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  z-index: 600;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 600;
+}

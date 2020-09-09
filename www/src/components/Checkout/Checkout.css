@@ -1,0 +1,127 @@
+.check-item-wrapper, .new-order-wrapper {
+  display: none;
+  font-family: "Kanit";
+  margin: 2rem 2rem 4rem;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: rgba(204, 204, 204, 0.25);
+}
+.check-item-wrapper.active, .new-order-wrapper.active {
+  display: block;
+}
+.check-item-wrapper .check-item-header-text, .new-order-wrapper .check-item-header-text {
+  font-weight: 700;
+}
+.check-item-wrapper .check-status-checkout, .new-order-wrapper .check-status-checkout {
+  text-align: right;
+  margin: 1rem 0.7rem 1rem 1rem;
+  font-weight: 700;
+}
+.check-item-wrapper .check-status-checkout .order-status-register, .new-order-wrapper .check-status-checkout .order-status-register {
+  color: #6a89c0;
+}
+.check-item-wrapper .check-status-checkout .order-status-in-work, .new-order-wrapper .check-status-checkout .order-status-in-work {
+  color: #bb6a96;
+}
+.check-item-wrapper .check-status-checkout .order-status-success, .new-order-wrapper .check-status-checkout .order-status-success {
+  color: #41c04d;
+}
+.check-item-wrapper .check-item, .new-order-wrapper .check-item {
+  width: 100%;
+}
+.check-item-wrapper .check-item .check-item-th-row th, .new-order-wrapper .check-item .check-item-th-row th {
+  background-color: #c0aa83;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.check-item-wrapper .check-item tr:nth-child(2n+1), .new-order-wrapper .check-item tr:nth-child(2n+1) {
+  background-color: #ccc;
+}
+.check-item-wrapper .check-item tr > td, .new-order-wrapper .check-item tr > td {
+  padding: 1rem;
+}
+.check-item-wrapper .check-item tr > td.check-item-name, .new-order-wrapper .check-item tr > td.check-item-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 1px solid #ccc;
+}
+.check-item-wrapper .check-item tr > td.check-item-total, .new-order-wrapper .check-item tr > td.check-item-total {
+  border: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.check-item-wrapper .check-item tr > td.check-item-total-text, .check-item-wrapper .check-item tr > td.check-item-total-sum, .new-order-wrapper .check-item tr > td.check-item-total-text, .new-order-wrapper .check-item tr > td.check-item-total-sum {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.check-item-wrapper .check-item tr > td.check-item-total-text, .new-order-wrapper .check-item tr > td.check-item-total-text {
+  text-align: right;
+}
+.check-item-wrapper .check-item tr > td.check-item-total-sum, .new-order-wrapper .check-item tr > td.check-item-total-sum {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.check-item-wrapper .check-description, .new-order-wrapper .check-description {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.check-item-wrapper .check-description .check-description-text, .new-order-wrapper .check-description .check-description-text {
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.check-item-wrapper .check-place-order, .new-order-wrapper .check-place-order {
+  text-align: right;
+  padding-top: 2rem;
+}
+.check-item-wrapper .check-place-order a, .new-order-wrapper .check-place-order a {
+  text-decoration: none;
+}
+.check-item-wrapper .check-place-order .btn-place-order, .check-item-wrapper .check-place-order .btn-place-order-back, .check-item-wrapper .check-place-order .btn-order-send, .new-order-wrapper .check-place-order .btn-place-order, .new-order-wrapper .check-place-order .btn-place-order-back, .new-order-wrapper .check-place-order .btn-order-send {
+  margin-top: 2rem;
+  margin-right: 5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  background-color: #c0aa83;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.check-item-wrapper .check-place-order .btn-place-order:hover, .check-item-wrapper .check-place-order .btn-place-order-back:hover, .check-item-wrapper .check-place-order .btn-order-send:hover, .new-order-wrapper .check-place-order .btn-place-order:hover, .new-order-wrapper .check-place-order .btn-place-order-back:hover, .new-order-wrapper .check-place-order .btn-order-send:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.5s ease-in-out;
+}
+.check-item-wrapper .check-place-order .btn-place-order-back, .new-order-wrapper .check-place-order .btn-place-order-back {
+  background-color: #c0b546;
+}
+.check-item-wrapper .check-place-order .btn-order-send, .new-order-wrapper .check-place-order .btn-order-send {
+  background-color: #41c04d;
+}
+.check-item-wrapper p, .new-order-wrapper p {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .check-item-wrapper .check-item .check-item-th-row th {
+    font-size: 1.3rem;
+  }
+  .check-item-wrapper .check-item tr td.check-item-total-text, .check-item-wrapper .check-item tr td.check-item-total-sum {
+    font-size: 1.5rem;
+  }
+  .check-item-wrapper .check-place-order {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .check-item-wrapper .check-place-order .btn-place-order-back, .check-item-wrapper .check-place-order .btn-place-order {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=Checkout.css.map */

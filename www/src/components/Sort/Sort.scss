@@ -1,0 +1,27 @@
+.wrapper-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+
+  & .orderBy {
+    padding: .5rem 2rem .5rem .3rem;
+    border-radius: 5px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .wrapper-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0;
+
+    & .orderBy {
+      padding: .2rem 1rem .2rem .2rem;
+      border-radius: 5px;
+    }
+  }
+}

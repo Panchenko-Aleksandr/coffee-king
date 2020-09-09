@@ -1,0 +1,60 @@
+.goodOfDay .slick-dots {
+  top: -35px;
+  bottom: auto;
+  left: 20px;
+}
+.goodOfDay .slick-dots li {
+  height: 25px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(59, 59, 59, 0.5);
+}
+.goodOfDay .slick-dots .slick-active {
+  background-color: #76bc21;
+  color: #fff !important;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+.slick-dots li button:before {
+  font-size: 11px;
+}
+
+.slick-disabled {
+  opacity: 0.2;
+}
+
+.slick-prev-custom {
+  background-image: url("/img/slider/prev-arrow.svg");
+  position: absolute;
+}
+
+.slick-next-custom {
+  background-image: url("/img/slider/next-arrow.svg");
+  position: absolute;
+}
+
+.slick-prev-custom-round, .slick-next-custom-round {
+  position: absolute;
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  top: calc(50% - 23px);
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-image: initial;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 41px;
+  outline: none;
+}
+.slick-prev-custom-round:hover, .slick-next-custom-round:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px 0px, rgba(101, 171, 33, 0.95) 0px 1px 3px 0px;
+}
+
+/*# sourceMappingURL=Slider.css.map */

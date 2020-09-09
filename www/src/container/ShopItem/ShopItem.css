@@ -1,0 +1,15 @@
+.shop-item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem 0 2rem 0;
+  padding: 0 2rem;
+  font-family: "Kanit";
+}
+.shop-item-wrapper .filter {
+  flex: 1;
+}
+.shop-item-wrapper .item-of-goods-wrapper {
+  flex: 3;
+}
+
+/*# sourceMappingURL=ShopItem.css.map */

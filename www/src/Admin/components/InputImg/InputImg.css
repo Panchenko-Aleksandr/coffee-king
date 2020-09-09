@@ -1,0 +1,10 @@
+.upload-img-wrapper label {
+  margin: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+.upload-img-wrapper label > .preview-img {
+  width: 150px;
+}
+
+/*# sourceMappingURL=InputImg.css.map */

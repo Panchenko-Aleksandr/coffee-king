@@ -1,0 +1,112 @@
+.main-container .about-section {
+  padding: 5rem;
+  display: grid;
+  grid-template-areas: "firstAboutArticle aboutArticle aboutArticle" "firstAboutArticle aboutArticle aboutArticle";
+  grid-column-gap: 3rem;
+  font-family: "Kanit";
+  font-size: 1.2rem;
+  height: 100%;
+  font-weight: 700;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("/img/main/about-bg.png");
+  color: #454545;
+  overflow: hidden;
+}
+.main-container .about-section:before {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 7px 5px #000;
+}
+.main-container .about-section:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: -2px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 7px 2px #000;
+}
+.main-container .about-section article header .top-about-section h2, .main-container .about-section article header .top-about-section h5 {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.main-container .about-section article p {
+  font-weight: 400;
+}
+.main-container #first-about-article {
+  grid-area: firstAboutArticle;
+  margin-top: 1.2rem;
+}
+
+@keyframes heightIn {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .main-container {
+    height: initial;
+  }
+  .main-container .about-section {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: "firstAboutArticle " "aboutArticle";
+    grid-column-gap: 3rem;
+    font-family: "Kanit";
+    font-size: 1.2rem;
+    height: 100%;
+    font-weight: 700;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url("/img/main/about-bg.png");
+    color: #454545;
+    overflow: hidden;
+  }
+  .main-container .about-section:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 7px 5px #000;
+  }
+  .main-container .about-section:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: -2px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 7px 2px #000;
+  }
+  .main-container .about-section article header .top-about-section h2, .main-container .about-section article header .top-about-section h5 {
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  .main-container .about-section article p {
+    font-weight: 400;
+  }
+  .main-container #first-about-article {
+    grid-area: firstAboutArticle;
+    margin-top: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=About.css.map */

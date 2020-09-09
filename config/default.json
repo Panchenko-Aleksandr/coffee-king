@@ -1,0 +1,4 @@
+{
+  "port" : 5000,
+  "mongodb_uri" : "mongodb+srv://root:hfpldfnhb123@cluster0.janxe.azure.mongodb.net/coffee-shop?retryWrites=true&w=majority"
+}

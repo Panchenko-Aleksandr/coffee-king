@@ -1,0 +1,170 @@
+.main-container .get-discount {
+  margin: 1.7rem 0;
+  overflow: hidden;
+  padding-top: 4rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.main-container .get-discount .discount-header {
+  margin-bottom: 2.5rem;
+}
+.main-container .get-discount .discount-header figure {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-container .get-discount .discount-header figure img {
+  animation: fadeIn;
+}
+.main-container .get-discount .discount-header figure img:nth-child(1) {
+  animation-duration: 3s;
+}
+.main-container .get-discount .discount-header figure img:nth-child(2) {
+  animation-duration: 3.5s;
+}
+.main-container .get-discount .discount-header figure img:nth-child(3) {
+  animation-duration: 4s;
+}
+.main-container .get-discount .discount-header figure img:nth-child(4) {
+  animation-duration: 4.5s;
+}
+.main-container .get-discount .discount-header figure img:nth-child(5) {
+  animation-duration: 5s;
+}
+.main-container .get-discount .discount-header figure img:nth-child(6) {
+  animation-duration: 5.5s;
+}
+.main-container .get-discount .body {
+  margin: 0 2rem;
+  display: flex;
+  text-align: center;
+}
+.main-container .get-discount .body .body-left {
+  background-color: rgba(0, 0, 0, 0.07);
+  height: 100%;
+  background-image: url("/img/main/discount/discount-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-container .get-discount .body .body-left article {
+  padding: 2rem;
+}
+.main-container .get-discount .body .body-left article header {
+  margin-top: 5rem;
+}
+.main-container .get-discount .body .body-left article header h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c0aa83;
+}
+.main-container .get-discount .body .body-left article header h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.main-container .get-discount .body .body-left article .discount-article-body figure {
+  margin: 3rem 0;
+  animation: flipInX;
+  animation-duration: 3s;
+}
+.main-container .get-discount .body .body-left article .discount-article-body p {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+.main-container .get-discount .body .body-left .btn-get-now, .main-container .get-discount .body .body-left .btn-hav-discount {
+  display: inline-block;
+  margin: 2rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #c0aa83;
+  transition: all 200ms ease-in-out;
+  border: 2px solid #c0aa83;
+}
+.main-container .get-discount .body .body-left .btn-get-now:hover, .main-container .get-discount .body .body-left .btn-hav-discount:hover {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+  transition: all 200ms ease-in-out;
+}
+.main-container .get-discount .body .body-left .btn-hav-discount {
+  background-color: #c07b96;
+}
+.main-container .get-discount .body .body-left .btn-hav-discount:hover {
+  background-color: #c07b96;
+  color: white;
+  border: 2px solid #c0aa83;
+}
+.main-container .get-discount .body .body-right {
+  width: 100%;
+  background-image: url("/img/main/discount/coffe_back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .main-container .get-discount {
+    margin: 2rem 0;
+    padding-top: 2rem;
+  }
+  .main-container .get-discount .discount-header {
+    margin-bottom: 1.5rem;
+  }
+  .main-container .get-discount .discount-header figure {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-container .get-discount .discount-header figure img {
+    width: 90px;
+    animation: fadeIn;
+  }
+  .main-container .get-discount .body {
+    margin: 0 2rem;
+  }
+  .main-container .get-discount .body .body-left article header {
+    margin-top: 2rem;
+  }
+  .main-container .get-discount .body .body-left article header h5 {
+    font-size: 1.3rem;
+  }
+  .main-container .get-discount .body .body-left article header h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .main-container .get-discount {
+    margin: 2rem 0;
+    padding-top: 0;
+  }
+  .main-container .get-discount .discount-header {
+    margin-bottom: 1.5rem;
+  }
+  .main-container .get-discount .discount-header figure {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-container .get-discount .discount-header figure img {
+    width: 50px;
+  }
+  .main-container .get-discount .body {
+    margin: 0 2rem;
+  }
+  .main-container .get-discount .body .body-left article header {
+    margin-top: 2rem;
+  }
+  .main-container .get-discount .body .body-left article header h5 {
+    font-size: 1.3rem;
+  }
+  .main-container .get-discount .body .body-left article header h2 {
+    font-size: 2.5rem;
+  }
+  .main-container .get-discount .body .body-right {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Discount.css.map */

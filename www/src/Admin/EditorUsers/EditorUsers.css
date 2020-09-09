@@ -1,0 +1,118 @@
+.editor-user-container {
+  margin: 2rem 2rem;
+}
+.editor-user-container table {
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.editor-user-container table > tr:nth-child(2n) {
+  background-color: #fff;
+}
+.editor-user-container table > tr.th-table {
+  background-color: #c0aa83;
+  text-align: center;
+}
+.editor-user-container table > tr.th-table td {
+  padding: 1rem 0.5rem;
+  font-weight: 700;
+}
+.editor-user-container table > tr.th-search-field {
+  border: 1px solid #ccc;
+}
+.editor-user-container table > tr.th-search-field td {
+  padding: 1rem;
+  text-align: center;
+}
+.editor-user-container table > tr.tr-user-line td {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.editor-user-container table > tr.tr-user-line td .show-wait-orders {
+  font-weight: 700;
+  cursor: pointer;
+}
+.editor-user-container table > tr.tr-user-line td .show-wait-orders:hover {
+  color: #bb6a96;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass {
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass:hover {
+  transition: all 0.5s ease-in-out;
+  color: #6a89c0;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass .change-pass.hide {
+  display: none;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass .change-pass label {
+  position: absolute;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  top: -5.5rem;
+  left: 8rem;
+  background-color: rgba(136, 114, 87, 0.82);
+  color: #fff;
+  padding: 0.4rem 1rem 0.5rem 1rem;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass .change-pass label input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass .change-pass label span {
+  margin-left: 3px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.editor-user-container table > tr.tr-user-line td .login-change-pass .change-pass label span:hover {
+  background-color: rgba(103, 136, 68, 0.74);
+  border-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.editor-user-container table > tr.tr-user-line td .cart-list-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(3, 3, 3, 0.69);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editor-user-container table > tr.tr-user-line td .cart-list-wrapper.hide {
+  display: none;
+}
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  z-index: 600;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 600;
+}
+
+/*# sourceMappingURL=EditorUsers.css.map */

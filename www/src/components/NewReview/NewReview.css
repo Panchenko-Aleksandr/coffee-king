@@ -1,0 +1,50 @@
+.review-wrapper {
+  margin-top: 3rem;
+}
+.review-wrapper .error {
+  margin-left: 0.5rem;
+  color: #ff1331;
+  font-weight: 700;
+}
+.review-wrapper .review-information {
+  display: block;
+  text-align: center;
+}
+.review-wrapper .review-name h5, .review-wrapper .review-email h5, .review-wrapper .review-text h5 {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.review-wrapper .review-name h5 em, .review-wrapper .review-email h5 em, .review-wrapper .review-text h5 em {
+  color: #ff1331;
+}
+.review-wrapper .review-name input, .review-wrapper .review-name textarea, .review-wrapper .review-email input, .review-wrapper .review-email textarea, .review-wrapper .review-text input, .review-wrapper .review-text textarea {
+  width: 100%;
+  border: none;
+}
+.review-wrapper .review-submit {
+  margin-top: 1rem;
+  text-align: center;
+}
+.review-wrapper .review-submit .btn-submit-new-review {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  font-weight: 700;
+  color: #000;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #c0aa83;
+  cursor: pointer;
+  transition: color 200ms ease-in-out, border 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+.review-wrapper .review-submit .btn-submit-new-review:disabled {
+  background-color: #777777 !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+}
+.review-wrapper .review-submit .btn-submit-new-review:hover {
+  background-color: #c0aa83;
+  color: #000;
+  transition: color 200ms ease-in-out, border 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+/*# sourceMappingURL=NewReview.css.map */

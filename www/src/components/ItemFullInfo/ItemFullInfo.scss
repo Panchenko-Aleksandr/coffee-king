@@ -1,0 +1,262 @@
+.wrapper-item-full-info {
+  margin-left: 2rem;
+
+  & .item-card {
+    display: flex;
+
+
+    & .btn-add-to-cart {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #c0aa83;
+      transition: background-color .5s ease-in-out;
+      color: #fff;
+      padding: .5rem 1rem;
+      border-radius: 5px;
+
+
+      &:hover {
+        background-color: #f1dbab;
+        color: #7b7b7b;
+        transition: background-color .5s ease-in-out;
+      }
+    }
+
+
+    & figure img {
+      width: 350px;
+      cursor: pointer;
+    }
+
+    & .show-big-img {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+
+
+      &.show {
+        opacity: 1;
+        z-index: 900;
+        transition: opacity 500ms ease-in-out;
+      }
+
+      & figure {
+        border-radius: 7px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          width: 80%;
+          border-radius: 7px;
+          z-index: 900;
+
+        }
+      }
+
+    }
+
+    & .item-info {
+      margin: 2rem 0 0 2rem;
+
+      & h2 {
+        font-weight: 700;
+      }
+
+      & .item-price {
+        margin: .7rem 0;
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: flex-start;
+
+        & .item-oldPrice {
+          font-weight: 400;
+          text-decoration: line-through;
+          margin: 0 2rem 0 1rem;
+          position: relative;
+
+          & .sale {
+            position: absolute;
+            display: block;
+            padding: 2px 15px;
+            top: -7rem;
+            right: 7rem;
+            text-align: right;
+            background-color: #ff3d5a;
+            border-radius: 50%;
+            z-index: 200;
+          }
+
+        }
+
+        & .price {
+          font-weight: 700;
+          color: #c0aa83;
+        }
+
+      }
+
+      & .item-description {
+        margin: 1.2rem 0;
+        text-indent: 1em;
+      }
+
+      & .out-of-stock {
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        color: red;
+      }
+
+      & .item-category, & .item-tag {
+        font-weight: 700;
+
+        & .category, & .tag {
+          margin-right: .5rem;
+        }
+
+        & .category-name, & .tag-list {
+          color: #c0aa83;
+        }
+
+        & span a {
+          color: #c0aa83;
+          text-decoration: none;
+
+          &:hover {
+            color: rgba(70, 70, 70, 0.51);
+          }
+        }
+
+      }
+
+    }
+  }
+
+  & .item-tabs {
+    margin-top: 2rem;
+
+    & .tabs-header {
+      display: flex;
+      justify-content: flex-start;
+
+      & div {
+        font-weight: 700;
+        padding: 1.2rem 2.5rem;
+        background-color: #c0aa83;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #af9271;
+          color: #fff;
+        }
+      }
+
+      & div.active {
+        background-color: #f5f5f5;
+
+        &:hover {
+          color: #000;
+        }
+      }
+
+    }
+
+    & .tabs-body {
+      padding: 2rem 1rem;
+      background-color: #f5f5f5;
+
+      & > div {
+        display: none;
+      }
+
+      & > div.active {
+        display: block;
+      }
+
+      & .tabs-description, & .tabs-reviews {
+        & h2 {
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        & pre {
+          font-family: "Kanit";
+          font-size: 1rem;
+          word-wrap: break-word;
+          white-space: pre-wrap;
+        }
+      }
+
+
+    }
+
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .shop-item-wrapper {
+    padding: 0;
+
+    & .wrapper-item-full-info {
+      margin-left: 0;
+
+
+      & .item-card {
+        flex-direction: column;
+
+        & figure {
+          margin: 0;
+          text-align: center;
+        }
+
+        & .item-info {
+          text-align: right;
+          margin-right: .5rem;
+        }
+
+        & .item-price {
+          justify-content: flex-end;
+        }
+
+
+        & .btn-add-to-cart {
+          display: inline-block;
+          margin-top: 1rem;
+          background-color: #c0aa83;
+          transition: background-color .5s ease-in-out;
+          color: #fff;
+          padding: .5rem 1rem;
+          border-radius: 5px;
+
+
+          &:hover {
+            background-color: #f1dbab;
+            color: #7b7b7b;
+            transition: background-color .5s ease-in-out;
+          }
+        }
+
+
+      }
+
+      & .item-tabs {
+        & .tabs-body, & .tabs-header {
+          margin: 0 .5rem;
+        }
+      }
+
+    }
+  }
+
+}

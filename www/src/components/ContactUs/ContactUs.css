@@ -1,0 +1,89 @@
+.contact-wrapper {
+  font-family: "Kanit";
+  margin: 5rem 2rem 7rem;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-wrapper .contact-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.contact-wrapper .contact-description h3 {
+  font-weight: 700;
+}
+.contact-wrapper .contact-description p {
+  font-size: 1.2rem;
+}
+.contact-wrapper .contact-description span {
+  margin: 0.5rem 0;
+}
+.contact-wrapper .contact-description .contact-phone, .contact-wrapper .contact-description .contact-address, .contact-wrapper .contact-description .contact-email {
+  display: flex;
+  align-items: center;
+}
+.contact-wrapper .contact-description .contact-phone img, .contact-wrapper .contact-description .contact-address img, .contact-wrapper .contact-description .contact-email img {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.7rem;
+}
+.contact-wrapper .contact-description .contact-phone p, .contact-wrapper .contact-description .contact-address p, .contact-wrapper .contact-description .contact-email p {
+  margin: 0;
+}
+.contact-wrapper .contact-description .contact-phone a, .contact-wrapper .contact-description .contact-address a, .contact-wrapper .contact-description .contact-email a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c0aa83;
+  text-decoration: none;
+}
+.contact-wrapper .contact-description .contact-phone a:hover, .contact-wrapper .contact-description .contact-address a:hover, .contact-wrapper .contact-description .contact-email a:hover {
+  color: #ccc;
+}
+.contact-wrapper .contact-opening-hours {
+  flex: 0.5;
+  color: #fff;
+  background-image: url("/img/main/contact-bg.png");
+  background-size: cover;
+  padding: 4rem;
+}
+.contact-wrapper .contact-opening-hours .sq-border {
+  border: 4px solid #fff;
+  height: 100%;
+}
+.contact-wrapper .contact-opening-hours .sq-border h2 {
+  padding: 2rem 2rem 0 2rem;
+  font-weight: 700;
+}
+.contact-wrapper .contact-opening-hours .sq-border .work-time {
+  padding: 2rem;
+}
+.contact-wrapper .contact-opening-hours .sq-border .work-time span {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  .contact-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 375px) {
+  .contact-wrapper .contact-opening-hours {
+    padding: 0;
+  }
+  .contact-wrapper .contact-opening-hours .sq-border h2 {
+    padding: 1rem 0 2rem 2rem;
+  }
+  .contact-wrapper .contact-opening-hours .sq-border .work-time {
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .contact-wrapper .contact-opening-hours .sq-border .work-time span {
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=ContactUs.css.map */

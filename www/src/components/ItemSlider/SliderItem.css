@@ -1,0 +1,144 @@
+.good-nav-link {
+  text-decoration: none;
+  font-family: "Kanit";
+  font-weight: 700;
+  text-align: center;
+}
+.good-nav-link a {
+  position: relative;
+  text-decoration: none;
+  z-index: 10;
+}
+.good-nav-link .slider-item {
+  margin: 1rem 1rem;
+  height: 480px;
+  background-color: white;
+  color: #000;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(204, 204, 204, 0.51);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 268px;
+}
+.good-nav-link .slider-item .sale {
+  position: absolute;
+  display: block;
+  padding: 2px 15px;
+  top: 1rem;
+  right: 1rem;
+  text-align: right;
+  background-color: #ff3d5a;
+  border-radius: 50%;
+  z-index: 200;
+}
+.good-nav-link .slider-item .item-img {
+  flex: 1;
+}
+.good-nav-link .slider-item .item-img img {
+  width: 100%;
+  min-height: 120px;
+}
+.good-nav-link .slider-item .item-name {
+  font-size: 1.5rem;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  color: black;
+}
+.good-nav-link .slider-item .item-name:hover {
+  color: #c0aa83;
+  transition: color 0.5s ease-in-out;
+}
+.good-nav-link .slider-item .item-description {
+  margin: 0.5rem 0;
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  flex: 1;
+}
+.good-nav-link .slider-item .item-price {
+  flex: 0;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.good-nav-link .slider-item .item-price .item-oldPrice {
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.good-nav-link .slider-item .item-price .price {
+  font-weight: 700;
+  color: #c0aa83;
+}
+.good-nav-link .slider-item .out-of-stock {
+  margin: 1.2rem 3.5rem 1rem 3.5rem;
+  color: #ff6296;
+}
+.good-nav-link .slider-item .btn-add-to-cart {
+  margin: 1.2rem 3.5rem 1rem 3.5rem;
+  background-color: #c0aa83;
+  transition: background-color 0.5s ease-in-out;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  position: relative;
+  z-index: 100;
+}
+.good-nav-link .slider-item .btn-add-to-cart:hover {
+  background-color: #f1dbab;
+  color: #7b7b7b;
+  transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 1025px) {
+  .good-nav-link .slider-item {
+    width: 165px;
+  }
+  .good-nav-link .slider-item .header-img .sale {
+    padding: 1px 10px;
+  }
+  .good-nav-link .slider-item .header-img .item-data {
+    text-align: center;
+  }
+  .good-nav-link .slider-item .header-img .item-data .item-name {
+    font-size: 1rem;
+  }
+  .good-nav-link .slider-item .header-img .item-data .item-description {
+    font-size: 0.7rem;
+  }
+  .good-nav-link .slider-item .header-img .item-data .item-price {
+    font-size: 1rem;
+  }
+  .good-nav-link .slider-item .header-img .item-data .btn-add-to-cart {
+    font-size: 0.8rem;
+    margin: 1.2rem 0 0.5rem 0;
+  }
+}
+@media (max-width: 375px) {
+  .good-nav-link .slider-item {
+    width: 270px;
+  }
+  .good-nav-link .slider-item .header-img .sale {
+    padding: 3px 15px;
+  }
+  .good-nav-link .slider-item .header-img .item-data .item-name {
+    font-size: 1.5rem;
+  }
+  .good-nav-link .slider-item .header-img .item-data .item-description {
+    font-size: 1rem;
+  }
+  .good-nav-link .slider-item .header-img .item-data .item-price {
+    font-size: 1.7rem;
+  }
+  .good-nav-link .slider-item .header-img .item-data .btn-add-to-cart {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.8rem 0;
+  }
+}
+
+/*# sourceMappingURL=SliderItem.css.map */

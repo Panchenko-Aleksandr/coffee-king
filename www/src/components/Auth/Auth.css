@@ -1,0 +1,119 @@
+.auth-wrapper {
+  background-color: rgba(0, 0, 0, 0.78);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 550;
+  display: flex;
+  justify-content: center;
+}
+.auth-wrapper .auth, .auth-wrapper .register {
+  margin-top: 1rem;
+  background-color: #fffbd5;
+  min-width: 350px;
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.auth-wrapper .auth h3, .auth-wrapper .register h3 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+.auth-wrapper .auth label, .auth-wrapper .register label {
+  font-size: 1.7rem;
+}
+.auth-wrapper .auth label div, .auth-wrapper .register label div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.auth-wrapper .auth input, .auth-wrapper .register input {
+  width: 250px;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.auth-wrapper .auth .btn-wrapper, .auth-wrapper .register .btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-wrapper .auth .btn-wrapper .btn-auth-cancel, .auth-wrapper .auth .btn-wrapper .btn-auth-ok, .auth-wrapper .register .btn-wrapper .btn-auth-cancel, .auth-wrapper .register .btn-wrapper .btn-auth-ok {
+  width: 80%;
+  margin: 0rem 3.5rem 1rem 3.5rem;
+  height: 50px;
+  background-color: #c0aa83;
+  transition: background-color 0.5s ease-in-out;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.auth-wrapper .auth .btn-wrapper .btn-auth-cancel:disabled, .auth-wrapper .auth .btn-wrapper .btn-auth-ok:disabled, .auth-wrapper .register .btn-wrapper .btn-auth-cancel:disabled, .auth-wrapper .register .btn-wrapper .btn-auth-ok:disabled {
+  background-color: #777777 !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+}
+.auth-wrapper .auth .btn-wrapper .btn-auth-cancel:hover, .auth-wrapper .auth .btn-wrapper .btn-auth-ok:hover, .auth-wrapper .register .btn-wrapper .btn-auth-cancel:hover, .auth-wrapper .register .btn-wrapper .btn-auth-ok:hover {
+  background-color: #f1dbab;
+  color: #7b7b7b;
+  transition: background-color 0.5s ease-in-out;
+}
+.auth-wrapper .auth .btn-wrapper .btn-register, .auth-wrapper .register .btn-wrapper .btn-register {
+  width: 100px;
+  border-radius: 5px;
+  background-color: #f1cca9;
+  padding: 0.2rem 1rem;
+}
+.auth-wrapper .auth .btn-wrapper .btn-register:hover, .auth-wrapper .register .btn-wrapper .btn-register:hover {
+  background-color: #f1dbab;
+  color: #000000;
+  transition: background-color 0.5s ease-in-out;
+}
+.auth-wrapper .auth .required-param, .auth-wrapper .register .required-param {
+  color: red;
+  font-weight: 700;
+}
+.auth-wrapper .auth .error, .auth-wrapper .register .error {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.auth-wrapper .register h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.auth-wrapper .register label {
+  font-size: 1.1rem;
+}
+.auth-wrapper .register label div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.auth-wrapper .register input {
+  width: 250px;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.auth-wrapper .register .btn-wrapper .btn-auth-cancel, .auth-wrapper .register .btn-wrapper .btn-auth-ok {
+  margin-top: 0.5rem;
+  height: 40px;
+}
+
+/*# sourceMappingURL=Auth.css.map */

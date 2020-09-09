@@ -1,0 +1,72 @@
+
+.main-container {
+  position: relative;
+  font-family: 'Kanit';
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.main-form{
+    height: 100vh;
+  }
+
+  & .backdrop-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.71);
+    z-index: 2;
+  }
+
+  & .logo {
+    position: relative;
+    padding: 1rem;
+    z-index: 3;
+  }
+
+
+  & .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+
+    & .title {
+      font-family: 'Kaushan Script', cursive;
+      font-size: 8rem;
+      color: #cccccc;
+    }
+
+    & button {
+      width: 200px;
+    }
+
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .main-container {
+    height: 100%;
+
+    .header-section {
+      & .title {
+        font-size: 5rem;
+      }
+
+      & button {
+        width: 200px;
+      }
+    }
+  }
+}

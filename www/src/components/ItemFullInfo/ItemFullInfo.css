@@ -1,0 +1,198 @@
+.wrapper-item-full-info {
+  margin-left: 2rem;
+}
+.wrapper-item-full-info .item-card {
+  display: flex;
+}
+.wrapper-item-full-info .item-card .btn-add-to-cart {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #c0aa83;
+  transition: background-color 0.5s ease-in-out;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.wrapper-item-full-info .item-card .btn-add-to-cart:hover {
+  background-color: #f1dbab;
+  color: #7b7b7b;
+  transition: background-color 0.5s ease-in-out;
+}
+.wrapper-item-full-info .item-card figure img {
+  width: 350px;
+  cursor: pointer;
+}
+.wrapper-item-full-info .item-card .show-big-img {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.wrapper-item-full-info .item-card .show-big-img.show {
+  opacity: 1;
+  z-index: 900;
+  transition: opacity 500ms ease-in-out;
+}
+.wrapper-item-full-info .item-card .show-big-img figure {
+  border-radius: 7px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-item-full-info .item-card .show-big-img figure img {
+  width: 80%;
+  border-radius: 7px;
+  z-index: 900;
+}
+.wrapper-item-full-info .item-card .item-info {
+  margin: 2rem 0 0 2rem;
+}
+.wrapper-item-full-info .item-card .item-info h2 {
+  font-weight: 700;
+}
+.wrapper-item-full-info .item-card .item-info .item-price {
+  margin: 0.7rem 0;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper-item-full-info .item-card .item-info .item-price .item-oldPrice {
+  font-weight: 400;
+  text-decoration: line-through;
+  margin: 0 2rem 0 1rem;
+  position: relative;
+}
+.wrapper-item-full-info .item-card .item-info .item-price .item-oldPrice .sale {
+  position: absolute;
+  display: block;
+  padding: 2px 15px;
+  top: -7rem;
+  right: 7rem;
+  text-align: right;
+  background-color: #ff3d5a;
+  border-radius: 50%;
+  z-index: 200;
+}
+.wrapper-item-full-info .item-card .item-info .item-price .price {
+  font-weight: 700;
+  color: #c0aa83;
+}
+.wrapper-item-full-info .item-card .item-info .item-description {
+  margin: 1.2rem 0;
+  text-indent: 1em;
+}
+.wrapper-item-full-info .item-card .item-info .out-of-stock {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: red;
+}
+.wrapper-item-full-info .item-card .item-info .item-category, .wrapper-item-full-info .item-card .item-info .item-tag {
+  font-weight: 700;
+}
+.wrapper-item-full-info .item-card .item-info .item-category .category, .wrapper-item-full-info .item-card .item-info .item-category .tag, .wrapper-item-full-info .item-card .item-info .item-tag .category, .wrapper-item-full-info .item-card .item-info .item-tag .tag {
+  margin-right: 0.5rem;
+}
+.wrapper-item-full-info .item-card .item-info .item-category .category-name, .wrapper-item-full-info .item-card .item-info .item-category .tag-list, .wrapper-item-full-info .item-card .item-info .item-tag .category-name, .wrapper-item-full-info .item-card .item-info .item-tag .tag-list {
+  color: #c0aa83;
+}
+.wrapper-item-full-info .item-card .item-info .item-category span a, .wrapper-item-full-info .item-card .item-info .item-tag span a {
+  color: #c0aa83;
+  text-decoration: none;
+}
+.wrapper-item-full-info .item-card .item-info .item-category span a:hover, .wrapper-item-full-info .item-card .item-info .item-tag span a:hover {
+  color: rgba(70, 70, 70, 0.51);
+}
+.wrapper-item-full-info .item-tabs {
+  margin-top: 2rem;
+}
+.wrapper-item-full-info .item-tabs .tabs-header {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper-item-full-info .item-tabs .tabs-header div {
+  font-weight: 700;
+  padding: 1.2rem 2.5rem;
+  background-color: #c0aa83;
+  cursor: pointer;
+}
+.wrapper-item-full-info .item-tabs .tabs-header div:hover {
+  background-color: #af9271;
+  color: #fff;
+}
+.wrapper-item-full-info .item-tabs .tabs-header div.active {
+  background-color: #f5f5f5;
+}
+.wrapper-item-full-info .item-tabs .tabs-header div.active:hover {
+  color: #000;
+}
+.wrapper-item-full-info .item-tabs .tabs-body {
+  padding: 2rem 1rem;
+  background-color: #f5f5f5;
+}
+.wrapper-item-full-info .item-tabs .tabs-body > div {
+  display: none;
+}
+.wrapper-item-full-info .item-tabs .tabs-body > div.active {
+  display: block;
+}
+.wrapper-item-full-info .item-tabs .tabs-body .tabs-description h2, .wrapper-item-full-info .item-tabs .tabs-body .tabs-reviews h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.wrapper-item-full-info .item-tabs .tabs-body .tabs-description pre, .wrapper-item-full-info .item-tabs .tabs-body .tabs-reviews pre {
+  font-family: "Kanit";
+  font-size: 1rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1000px) {
+  .shop-item-wrapper {
+    padding: 0;
+  }
+  .shop-item-wrapper .wrapper-item-full-info {
+    margin-left: 0;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-card {
+    flex-direction: column;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-card figure {
+    margin: 0;
+    text-align: center;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-card .item-info {
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-card .item-price {
+    justify-content: flex-end;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-card .btn-add-to-cart {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #c0aa83;
+    transition: background-color 0.5s ease-in-out;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-card .btn-add-to-cart:hover {
+    background-color: #f1dbab;
+    color: #7b7b7b;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .shop-item-wrapper .wrapper-item-full-info .item-tabs .tabs-body, .shop-item-wrapper .wrapper-item-full-info .item-tabs .tabs-header {
+    margin: 0 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=ItemFullInfo.css.map */

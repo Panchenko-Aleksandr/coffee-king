@@ -1,0 +1,184 @@
+@mixin btn {
+  background-color: #c0aa83;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all .5s ease-in-out;
+  margin-top: 2rem;
+  padding: .5rem 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: .25rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    transition: all .5s ease-in-out;
+  }
+}
+
+.editor-goods-container {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  & .good-btn, {
+    text-align: center;
+    margin-top: 1rem;
+
+    & .btn-submit-new-good {
+      @include btn;
+
+      &:disabled {
+        background-color: #777777 !important;
+        border: 1px solid transparent !important;
+        color: #fff !important;
+      }
+
+
+    }
+  }
+
+
+  & .editor-goods {
+    flex: 1;
+  }
+
+  & .review-goods {
+    flex: 1
+  }
+
+  & .editor-goods {
+    & .tabs-header {
+      display: flex;
+
+      & div {
+        flex: 1;
+        font-weight: 700;
+        padding: 1.2rem 2.5rem;
+        background-color: #c0aa83;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background-color: #af9271;
+          color: #fff;
+        }
+      }
+
+      & div.active {
+        background-color: #f5f5f5;
+
+        &:hover {
+          color: #000;
+        }
+      }
+
+    }
+
+    & .tabs-body {
+      padding: 2rem 1rem;
+      background-color: #f5f5f5;
+
+      & > div {
+        display: none;
+      }
+
+      & > div.active {
+        display: block;
+      }
+
+      & .tabs-description, & .tabs-reviews {
+        & h2 {
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        & pre {
+          font-family: "Kanit";
+          font-size: 1rem;
+          word-wrap: break-word;
+          white-space: pre-wrap;
+        }
+      }
+
+
+    }
+
+    & form {
+
+      & .required-param {
+        margin-left: .2rem;
+        color: #ff1331;
+        font-weight: 700;
+      }
+
+      & label {
+        margin: .5rem 0;
+        width: 100%;
+
+        & .error {
+          margin-left: .5rem;
+          color: #ff1331;
+          font-weight: 700;
+        }
+
+      }
+
+      & input, & select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: .5rem 0 .5rem .4rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+
+        &.is-invalid-input {
+          background-color: rgba(137, 105, 66, 0.38);
+        }
+
+      }
+
+      & textarea {
+        width: 100%;
+        min-height: 150px;
+      }
+
+    }
+
+    & .good-is-active {
+      margin: 1.5rem 0;
+
+    }
+
+  }
+
+  & .edit-good {
+
+
+    & .search-good {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      padding: 1rem 0 1rem 0;
+      margin-bottom: 1rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+
+      & .btn-submit-search-good {
+        @include btn;
+        padding: .2rem 2rem;
+        margin-top: 0;
+      }
+
+      & .str-search-good {
+        padding: .2rem .3rem;
+        font-size: 1.5rem;
+        width: 200px;
+      }
+    }
+  }
+}

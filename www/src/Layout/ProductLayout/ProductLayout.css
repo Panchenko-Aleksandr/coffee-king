@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+body #root {
+  height: 100%;
+}
+
+.cf-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.cf-container header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+.cf-container .main-content {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+}
+.cf-container footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+/*# sourceMappingURL=ProductLayout.css.map */

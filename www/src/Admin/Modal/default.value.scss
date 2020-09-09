@@ -1,0 +1,61 @@
+//Цвет NavBar
+$colorBackgroundHeader: rgba(244, 229, 25, 0.57);
+$colorBackgroundHeaderNonTransparent: rgba(244, 229, 25, 1);
+// Цвет текста NavBar
+$colorNavbarMenu: #3478e1;
+
+//Цвет треугольника open/hide меню выбора остатков
+$colorTriangleTableCloseOpenOptions :  #74abe1;
+//Цвет треугольника open/hide меню выбора остатков : hover
+$colorTriangleTableCloseOpenOptionsHover :$colorNavbarMenu;
+//Цвет кнопки загрузки Excel файла
+$colorBtnDownloadExcelFileHover: $colorNavbarMenu;
+//Цвет кнопки загрузки Excel файла : hover
+$colorBtnDownloadExcelFileBorderAfterHover : $colorBackgroundHeaderNonTransparent;
+
+//Цвет границ таблицы отображающая остатки
+$colorBorderTableRemaining: #817e87;
+//Цвет четных рядов таблицы
+$colorEvenTrTable: rgba(216, 239, 154, 0.53);
+
+//Цвет текста
+$colorText: #000;
+
+//Цвет Label для селекта выбора АЗС в RestFuel
+$colorLabelForTableRestFuel: #000;
+//Цвет Selected Option для селекта выбора АЗС в RestFuel
+$colorSelectedOptionForTableRestFuel: #000;
+
+
+
+//Цвет body'a Модального окна Confirmation
+$colorModalBodyInformation: #c0aa83;
+//Цвет footer'a Модального окна Confirmation
+$colorModalFooterInformation: #9d876c;
+//Цвет текста Модального окна Confirmation
+$colorTextModalInformation: #000;
+
+//Цвет body'a Модального окна Confirmation
+$colorModalBodyConfirmation: rgb(207, 226, 152);
+//Цвет footer'a Модального окна Confirmation
+$colorModalFooterConfirmation: rgb(163, 182, 115);
+//Цвет текста Модального окна Confirmation
+$colorTextModalConfirmation: #000;
+
+//body Модального окна Error
+$colorModalBodyError: #ff7476;
+//Цвет footer'a Модального окна Error
+$colorModalFooterError: rgb(255, 151, 151);
+//Цыет текста модального окна Error
+$colorTextModalError: #1f1f1f;
+
+
+//Цвет кнопки добавления поставщика
+$colorButtonFloatingAction: $colorNavbarMenu;
+
+//Цвет обводки контейнера <Wrapper />
+$colorBorderWrapper: #000;
+//Цвет кнопки применения изменений
+$colorButtonApplyChanges: $colorBackgroundHeader;
+//Цыет текста на кнопке
+$colorTextButtonApplyChanges: $colorText;
